@@ -26,7 +26,13 @@ class Solution:
                 start = left + 1
                 
         return s[start:start + longest]
-    
+
+
+##   analyze the time complexity of the above solution
+#   The time complexity of the above solution is O(n^2), where n is the length of the input string s.
+#  This is because for each character in the string, we may need to expand outwards to check 
+# for palindromic substrings, which can take up to O(n) time in the worst case. Since we do this for 
+# each of the n characters, the overall time complexity is O(n^2).
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         if not s:
