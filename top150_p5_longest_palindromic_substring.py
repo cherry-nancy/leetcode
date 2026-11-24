@@ -1,6 +1,3 @@
-
->>> #Longest palindrome substring
-#中心线枚举
 class Solution:
     def longestPalindrom(self, s):
         if not s:  #s is None, or s =""
