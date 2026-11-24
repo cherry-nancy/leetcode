@@ -30,3 +30,16 @@ class Solution:
 # Two pointers with a counter
 # TC: O(N) - we traverse the array once, and each assignment takes O(1) time.
 # SC: O(1) - we only use three variables, regardless of the input size.
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i = 0
+
+        for num in nums:
+            if i < 2 or num != nums[i - 2]:
+                nums[i] = num
+                i += 1
+
+        return i
+# TC: O(n)
+# SC: O(1)
